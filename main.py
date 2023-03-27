@@ -55,10 +55,8 @@ def apply_velocity(L, R, U, D, coords):
         return (x - 1, y)
     if R:
         return (x + 1, y)
-
     if U:
         return (x, y - 1)
-
     if D:
         return (x, y + 1)
 
@@ -167,7 +165,6 @@ while running:
         applecount += 1
         add_body = True
         apple_x, apple_y = get_position(size)
-
     # update display
     time.sleep(0.05)
     if not within_boundary() or not cross_over():
